@@ -2,15 +2,16 @@
 ul{list-style: none; }
 ul li a{text-decoration: none;}
 
-div img{display: block; width: 100%;}
+img{display: block; width: 100%;}
 
-.flex-container{display:flex; max-width: 992px;margin:10rem; width:100%;width: 100%; min-width: 320px;}
+.flex-container{display:flex; max-width: 992px;margin: 10rem; width:100%;min-width: 320px;}
 
 header{ background-color: #930c8a; height:100px;  display: flex; align-items: center; color: white; }
 
+header .menu{justify-content: space-between;}
 
 
-header .list-itens{display: flex; max-width: 260px; width: 100%;justify-content: space-between;padding:10rem;} 
+header .list-itens{display: flex; max-width: 260px; width: 100%;padding:6rem;} 
 
 .list-itens li a{color:white; margin: 6px; }
 
@@ -18,10 +19,10 @@ header .list-itens{display: flex; max-width: 260px; width: 100%;justify-content:
 
 .apresentacao{ align-items:center; justify-content: space-between;height: 100vh; }
 
-.apresentacao .texto-apresentacao{min-width:200px;}
+.apresentacao .texto-apresentacao{min-width:px;}
 
 
-.texto-apresentacao h1{color:#930c8a; font-size: 65px; }
+.texto-apresentacao h1{color:#930c8a; font-size: 60px; }
 
 .btn {background-color: #930c8a; color: white;text-align: center; border-radius: 20px; width: 200px; display: block; text-decoration: none; height: 2rem;margin-top:11rem; line-height: 33px;box-shadow: 2px 0 1px 0px rgb(165, 84, 126);}
 
@@ -79,24 +80,62 @@ header .list-itens{display: flex; max-width: 260px; width: 100%;justify-content:
 
 footer{background-color: #930c8a;margin-top: 4rem;   height: 70px;display:flex; align-items: center;color: white; font-size: 15px;}
 
-/*mobile*/
+/*mobile mobile mobile mobile mobile mobile mobile mobile mobile mobile*/
 
+@media (min-width:320px) and (max-width:992px){
 
+    .flex-container{ max-width: 992px;width:100%;min-width: 320px;display: contents;font-size: 10px;}
+    
+    header .list-itens{flex-direction:row; max-width: 260px; width: 100%;padding: 3rem;font-size: 10px;}
+     
+    header .menu h1{padding:1rem ;}
+
+    .apresentacao .texto-apresentacao{min-width:200px;}
+
+    .texto-apresentacao h1{color:#930c8a; font-size: 40px;padding: 1rem; }
+
+    .texto-apresentacao h4{font-size: 1rem; padding: 1rem;}
+
+    #quem-somos{flex-direction: column;} 
+
+    #quem-somos h2{font-size: 30px;color: #930c8a; display: block; }
+
+    #quem-somos h2::before{content: ""; background-color: #930c8a;  width: 5px; margin-right:6px; position: relative; }
+
+    #quem-somos p{width: 100%;text-align:center;font-size: 0.7rem; margin: 0 0 1px; }
+
+    #quem-somos img{min-width:320px; margin: auto; }
+
+    #servicos{flex-direction: column;}
+
+    #servicos h2{color: white;font-size: 2rem;padding: 1rem;}
+
+    .list-servicos{display: block;flex-direction: column; padding: 2rem; }
+
+    .list-servicos .item-servico{text-align: center;}
+
+    .list-servicos a{width: 220px; background-color: white; border-radius: 20px; height: 50px; text-align: center; line-height: 50px;padding: 0.5rem; text-decoration: none; color: #930c8a; font-size:14px;}
+
+    .list-servicos a:hover{color: rgb(247, 247, 248); background-color:rgb(165, 84, 126); transition: 1s;}
+
+    .list-servicos p{color: white; font-weight: 700;}
+
+    .item-servico img{width: 80%; margin:auto ;}
+
+    #planos{display: contents;}
+
+    #planos h2{color: #930c8a; font-size: 2rem; }
+
+    .list-planos{display: contents; align-items: flex-start; }
+
+    #planos{flex-direction: flex-end; min-height: 100vh;margin-top: 5rem; padding-top: 5px; display: contents;}
+
+    .list-planos .item-plano{margin: auto; width: 100%;margin-bottom: 3rem;}
+
+    footer{background-color: #930c8a; height:100px;color: white;} 
+
+    footer p{font-size: 0.8rem;padding: 1rem;text-align: center;} 
 
    
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
