@@ -51,7 +51,6 @@ header .list-itens{display: flex; max-width: 260px; width: 100%;padding:6rem;}
 
 .list-servicos a:hover{color: rgb(247, 247, 248); background-color:rgb(165, 84, 126); transition: 1s;}
 
-
 .list-servicos p{color: white; font-weight: 700;}
 
 .item-servico img{width: 80%; margin:auto ;}
