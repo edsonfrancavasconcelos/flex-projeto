@@ -80,6 +80,10 @@ header .list-itens{display: flex; max-width: 260px; width: 100%;padding:6rem;}
 
 footer{background-color: #930c8a;margin-top: 4rem;   height: 70px;display:flex; align-items: center;color: white; font-size: 15px;}
 
+footer p{font-size: 1rem;padding: 2rem;text-align: center;} 
+
+
+
 /*mobile mobile mobile mobile mobile mobile mobile mobile mobile mobile*/
 
 @media (min-width:320px) and (max-width:992px){
